@@ -12,9 +12,9 @@ const LoginForm = () => {
   const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateLoginForm)
 
   return (
-    <div className="flex flex-col justify-center items-center gap-2 w-full border border-gray-300 rounded-xl p-2">
-      <User className="min-h-72 w-full max-w-72 border-2 rounded-full p-1"/>
-      <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center gap-2 w-full max-w-[700px]">
+    <div className="form-layout">
+      <User className="user-icon-form"/>
+      <form onSubmit={handleSubmit} className="auth-form">
         <input type="text"
           name="name"
           value={values.name}
