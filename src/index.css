@@ -12,4 +12,13 @@
   .form-buttons {
     @apply border border-gray-400 w-full max-w-20 text-xl font-semibold p-1 
   }
+  .form-layout {
+    @apply flex flex-col justify-center items-center gap-2 w-full border border-gray-300 rounded-xl p-2
+  }
+  .user-icon-form {
+    @apply min-h-72 w-full max-w-72 border-2 rounded-full p-1
+  }
+  .auth-form {
+    @apply flex flex-col justify-center items-center gap-2 w-full max-w-[700px]
+  }
 }

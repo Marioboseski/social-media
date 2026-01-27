@@ -1,5 +1,6 @@
 import useForm from "../../hooks/useForm";
 import validateRegisterForm from "../../utils/validateRegisterForm";
+import { User } from "lucide-react";
 
 const initialValues = {
   name: "",
@@ -13,14 +14,15 @@ const RegisterForm = () => {
   const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateRegisterForm);
 
   return (
-    <div>
-
-      <form onSubmit={handleSubmit}>
+    <div className="form-layout">
+      <User className="user-icon-form"/>
+      <form onSubmit={handleSubmit} className="auth-form">
         <input type="text"
         name="name"
         value={values.name}
         onChange={handleChange}
-        placeholder="Name" />
+        placeholder="Name"
+        className="form-inputs" />
 
         {errors.name && <p>{errors.name}</p>}
 
@@ -28,7 +30,8 @@ const RegisterForm = () => {
         name="lastName"
         value={values.lastName}
         onChange={handleChange}
-        placeholder="Lastname" />
+        placeholder="Lastname"
+        className="form-inputs" />
 
         {errors.lastName && <p>{errors.lastName}</p>}
 
@@ -36,7 +39,8 @@ const RegisterForm = () => {
         name="email"
         value={values.email}
         onChange={handleChange}
-        placeholder="Email" />
+        placeholder="Email"
+        className="form-inputs" />
 
         {errors.email && <p>{errors.email}</p>}
 
@@ -44,7 +48,8 @@ const RegisterForm = () => {
         name="password"
         value={values.password}
         onChange={handleChange}
-        placeholder="*******" />
+        placeholder="*******"
+        className="form-inputs" />
 
         {errors.password && <p>{errors.password}</p>}
 
@@ -52,11 +57,12 @@ const RegisterForm = () => {
         name="location"
         value={values.location}
         onChange={handleChange}
-        placeholder="Location" />
+        placeholder="Location"
+        className="form-inputs" />
 
         {errors.location && <p>{errors.location}</p>}
 
-        <button type="submit">Send</button>
+        <button type="submit" className="form-buttons">Send</button>
       </form>
 
     </div>
