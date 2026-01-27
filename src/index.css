@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-full max-w-[1200px] mx-auto
+  }
+  .form-inputs {
+    @apply border-2 border-gray-400  rounded-lg w-full max-w-72 p-2 text-lg font-semibold   
+  }
+  .form-buttons {
+    @apply border border-gray-400 w-full max-w-20 text-xl font-semibold p-1 
+  }
+}
