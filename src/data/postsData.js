@@ -8,7 +8,9 @@ import avatar2 from "../assets/avatar2.jpg";
 import avatar3 from "../assets/avatar3.jpg";
 import avatar4 from "../assets/avatar4.jpg";
 import avatar5 from "../assets/avatar5.jpg";
-
+import { Heart, icons } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { Bookmark } from "lucide-react";
 
 const postsData = [
   {
@@ -16,7 +18,8 @@ const postsData = [
     avatar: avatar1,
     username: "max_ovcharenko",
     post: post1,
-    caption: "caption"
+    caption: "Winter forest at sunset",
+    icons: [ Heart, MessageCircle, Bookmark ]
   },
 
   {
@@ -24,7 +27,8 @@ const postsData = [
     avatar: avatar5,
     username: "max_ovcharenko",
     post: post2,
-    caption: "caption"
+    caption: "Tall trees and calm surroundings",
+    icons: [ Heart, MessageCircle, Bookmark ]
   },
 
   {
@@ -32,7 +36,8 @@ const postsData = [
     avatar: avatar2,
     username: "max_ovcharenko",
     post: post3,
-    caption: "caption"
+    caption: "A classic view of the city",
+    icons: [ Heart, MessageCircle, Bookmark ]
   },
 
   {
@@ -40,7 +45,8 @@ const postsData = [
     avatar: avatar3,
     username: "max_ovcharenko",
     post: post4,
-    caption: "caption"
+    caption: "City streets in motion",
+    icons: [ Heart, MessageCircle, Bookmark ]
   },
 
   {
@@ -48,7 +54,8 @@ const postsData = [
     avatar: avatar4,
     username: "max_ovcharenko",
     post: post5,
-    caption: "caption"
+    caption: "Parked and ready to ride",
+    icons: [ Heart, MessageCircle, Bookmark ]
   },
 ];
 
