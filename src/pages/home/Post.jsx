@@ -1,4 +1,4 @@
-const Post = ({ avatar, username, post, caption, icons }) => {
+const Post = ({ avatar, username, post, caption, icons, VerifIcon }) => {
   return (
     <div className="flex flex-col p-2 gap-2">
       <div className="flex gap-3 items-center ">
@@ -11,10 +11,11 @@ const Post = ({ avatar, username, post, caption, icons }) => {
           <Icon key={index} />
         ))}
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-1">
         <p>{username}</p>
+        <VerifIcon/>
         <p>{caption}</p>
-      </div>
+      </div>      
     </div>
   );
 }

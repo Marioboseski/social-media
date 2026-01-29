@@ -12,7 +12,8 @@ const Home = () => {
             username={post.username}
             post={post.post}
             caption={post.caption} 
-            icons={post.icons}/>
+            icons={post.icons}
+            VerifIcon={post.VerifIcon}/>
         ))}
       </div>
     </div>
