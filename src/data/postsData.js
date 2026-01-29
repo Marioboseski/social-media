@@ -1,14 +1,14 @@
-import post1 from "../assets/post1.jpg";
-import post2 from "../assets/post2.jpg";
-import post3 from "../assets/post3.jpg";
-import post4 from "../assets/post4.jpg";
-import post5 from "../assets/post5.jpg";
-import avatar1 from "../assets/avatar1.jpg";
-import avatar2 from "../assets/avatar2.jpg";
-import avatar3 from "../assets/avatar3.jpg";
-import avatar4 from "../assets/avatar4.jpg";
-import avatar5 from "../assets/avatar5.jpg";
-import { Heart, icons } from "lucide-react";
+import post1 from "../assets/posts/post1.jpg";
+import post2 from "../assets/posts/post2.jpg";
+import post3 from "../assets/posts/post3.jpg";
+import post4 from "../assets/posts/post4.jpg";
+import post5 from "../assets/posts/post5.jpg";
+import avatar1 from "../assets/posts/avatar1.jpg";
+import avatar2 from "../assets/posts/avatar2.jpg";
+import avatar3 from "../assets/posts/avatar3.jpg";
+import avatar4 from "../assets/posts/avatar4.jpg";
+import avatar5 from "../assets/posts/avatar5.jpg";
+import { Heart } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 import { Bookmark } from "lucide-react";
 
