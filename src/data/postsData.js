@@ -10,7 +10,6 @@ import avatar4 from "../assets/posts/avatar4.jpg";
 import avatar5 from "../assets/posts/avatar5.jpg";
 import { Heart } from "lucide-react";
 import { MessageCircle } from "lucide-react";
-import { Bookmark } from "lucide-react";
 import { BadgeCheck } from "lucide-react";
 
 const postsData = [
@@ -20,7 +19,7 @@ const postsData = [
     username: "max_ovcharenko",
     post: post1,
     caption: "Winter forest at sunset",
-    icons: [ Heart, MessageCircle, Bookmark ],
+    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -30,7 +29,7 @@ const postsData = [
     username: "max_ovcharenko",
     post: post2,
     caption: "Tall trees and calm surroundings",
-    icons: [ Heart, MessageCircle, Bookmark ],
+    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -40,7 +39,7 @@ const postsData = [
     username: "max_ovcharenko",
     post: post3,
     caption: "A classic view of the city",
-    icons: [ Heart, MessageCircle, Bookmark ],
+    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -50,7 +49,7 @@ const postsData = [
     username: "max_ovcharenko",
     post: post4,
     caption: "City streets in motion",
-    icons: [ Heart, MessageCircle, Bookmark ],
+    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -60,7 +59,7 @@ const postsData = [
     username: "max_ovcharenko",
     post: post5,
     caption: "Parked and ready to ride",
-    icons: [ Heart, MessageCircle, Bookmark ],
+    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 ];
