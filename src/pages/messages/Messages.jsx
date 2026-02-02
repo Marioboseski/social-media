@@ -4,7 +4,7 @@ import MessageItem from "./MessageItem";
 
 const Messages = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center gap-3">
       {messagesData.map((message) => (
         <MessageItem key={message.id} message={message}/>
       ))}
