@@ -27,6 +27,51 @@ const chatsData = {
       text: "Yes, I sent it yesterday.",
       time: "09:12"
     },
+  ],
+
+   3: [
+    {
+      id: 1,
+      sender: "user",
+      text: "Did you finish the project?",
+      time: "09:10"
+    },
+    {
+      id: 2,
+      sender: "me",
+      text: "Yes, I sent it yesterday.",
+      time: "09:12"
+    },
+  ],
+
+   4: [
+    {
+      id: 1,
+      sender: "user",
+      text: "Did you finish the project?",
+      time: "09:10"
+    },
+    {
+      id: 2,
+      sender: "me",
+      text: "Yes, I sent it yesterday.",
+      time: "09:12"
+    },
+  ],
+
+   5: [
+    {
+      id: 1,
+      sender: "user",
+      text: "Did you finish the project?",
+      time: "09:10"
+    },
+    {
+      id: 2,
+      sender: "me",
+      text: "Yes, I sent it yesterday.",
+      time: "09:12"
+    },
   ]
 };
 
