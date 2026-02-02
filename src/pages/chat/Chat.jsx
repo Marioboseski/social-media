@@ -9,17 +9,23 @@ const Chat = () => {
 
   const chat = messagesData.find(message => message.id === Number(id));
 
-  if(!chat || !chatMessages) {
+  if (!chat || !chatMessages) {
     return <p>Chat not found</p>
   };
 
   return (
-    <div>
-      <img src={chat.avatar} alt="chat-avatar" />
-      <p>{chat.username}</p>
-      {chatMessages.map(chats => (
-        <Chats key={chats.id} chats={chats}/>
-      ))}
+    <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center gap-3 p-2 bg-red-200 w-full max-w-[500px]">
+        <div className="flex justify-center items-center gap-4">
+          <img src={chat.avatar} alt="chat-avatar" className="w-full max-w-10 rounded-full" />
+          <p>{chat.username}</p>
+        </div>
+        <div className="flex flex-col">
+          {chatMessages.map(chats => (
+            <Chats key={chats.id} chats={chats} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
