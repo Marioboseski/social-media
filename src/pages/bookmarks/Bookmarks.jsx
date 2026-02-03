@@ -9,7 +9,7 @@ const Bookmarks = () => {
   }
 
   return (
-    <div>
+    <div className="flex justify-center items-center">
       {bookmarks.map(post => (
         <Post key={post.id} post={post} />
       ))}
