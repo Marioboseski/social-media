@@ -26,7 +26,7 @@ const postsData = [
   {
     id: 2,
     avatar: avatar5,
-    username: "max_ovcharenko",
+    username: "ayo_",
     post: post2,
     caption: "Tall trees and calm surroundings",
     icons: [ Heart, MessageCircle ],
@@ -36,7 +36,7 @@ const postsData = [
   {
     id: 3,
     avatar: avatar2,
-    username: "max_ovcharenko",
+    username: "ali_morshedlou",
     post: post3,
     caption: "A classic view of the city",
     icons: [ Heart, MessageCircle ],
@@ -46,7 +46,7 @@ const postsData = [
   {
     id: 4,
     avatar: avatar3,
-    username: "max_ovcharenko",
+    username: "rena_savalh",
     post: post4,
     caption: "City streets in motion",
     icons: [ Heart, MessageCircle ],
@@ -56,7 +56,7 @@ const postsData = [
   {
     id: 5,
     avatar: avatar4,
-    username: "max_ovcharenko",
+    username: "taylor_",
     post: post5,
     caption: "Parked and ready to ride",
     icons: [ Heart, MessageCircle ],

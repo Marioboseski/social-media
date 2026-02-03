@@ -17,7 +17,7 @@ const messagesData = [
   {
     id: 2,
     avatar: avatar2,
-    username: "max_ovcharenko",
+    username: "ali_morshedlou",
     lastMessage: "Hey how are you",
     time: "24 minutes ago",
     isOnline: false,
@@ -26,7 +26,7 @@ const messagesData = [
   {
     id: 3,
     avatar: avatar3,
-    username: "max_ovcharenko",
+    username: "rena_savalh",
     lastMessage: "Hey how are you",
     time: "24 minutes ago",
     isOnline: false,
@@ -35,7 +35,7 @@ const messagesData = [
   {
     id: 4,
     avatar: avatar4,
-    username: "max_ovcharenko",
+    username: "taylor_",
     lastMessage: "Hey how are you",
     time: "24 minutes ago",
     isOnline: false,
@@ -44,7 +44,7 @@ const messagesData = [
   {
     id: 5,
     avatar: avatar5,
-    username: "max_ovcharenko",
+    username: "ayo_",
     lastMessage: "Hey how are you",
     time: "24 minutes ago",
     isOnline: false,

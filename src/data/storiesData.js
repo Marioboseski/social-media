@@ -19,28 +19,28 @@ const storiesData = [
 
   {
     id: 2, 
-    username: "max_ovcharenko",
+    username: "ali_morshedlou",
     avatar: storyAvatar2,
     storyImg: storyImg2,
   },
 
   {
     id: 3, 
-    username: "max_ovcharenko",
+    username: "rena_savalh",
     avatar: storyAvatar3,
     storyImg: storyImg3,
   },
 
   {
     id: 4, 
-    username: "max_ovcharenko",
+    username: "taylor",
     avatar: storyAvatar4,
     storyImg: storyImg4,
   },
 
   {
     id: 5, 
-    username: "max_ovcharenko",
+    username: "ayo_",
     avatar: storyAvatar5,
     storyImg: storyImg5,
   },
