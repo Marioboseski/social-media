@@ -10,7 +10,7 @@ const Post = ({ post }) => {
     <div className="flex flex-col p-2 gap-2">
       
       <div className="flex gap-3 items-center">
-        <img src={post.avatar} alt="avatar" className="w-10 h-10 rounded-full" />
+        <img src={post.avatar} alt="avatar" className="w-10 h-10 rounded-full object-cover" />
         <p>{post.username}</p>
         <post.VerifIcon />
       </div>
@@ -29,6 +29,7 @@ const Post = ({ post }) => {
 
       <div className="flex gap-1">
         <p className="font-semibold">{post.username}</p>
+        <post.VerifIcon />
         <p>{post.caption}</p>
       </div>
 
