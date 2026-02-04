@@ -16,9 +16,9 @@ const Stories = () => {
       </div>
 
       {activeStory && (
-        <div className=" flex flex-col justify-center z-50 fixed bg-black/80 inset-0 p-3 min-h-dvh">
+        <div className=" flex flex-col justify-center items-center z-50 fixed bg-black/80 inset-0 p-3 min-h-dvh">
           <button onClick={() => setActiveStory(null)} className="text-white"><X size={50}/></button>
-          <img src={activeStory.storyImg} alt="story" className="border-2 border-gray-300 rounded-lg"/>
+          <img src={activeStory.storyImg} alt="story" className=" w-full max-w-[400px] border-2 border-gray-300 rounded-lg"/>
         </div>
       )}
     </div>
