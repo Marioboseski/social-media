@@ -16,8 +16,8 @@ const Chat = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex flex-col justify-center gap-3 p-2 bg-red-200 w-full max-w-[500px]">
-        <div className="flex justify-center items-center gap-4">
-          <img src={chat.avatar} alt="chat-avatar" className="w-full max-w-10 rounded-full" />
+        <div className="flex flex-col justify-center items-center gap-4">
+          <img src={chat.avatar} alt="chat-avatar" className="w-16 h-16 rounded-full object-cover" />
           <p>{chat.username}</p>
         </div>
         <div className="flex flex-col">
