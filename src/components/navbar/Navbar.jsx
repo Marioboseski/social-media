@@ -3,6 +3,7 @@ import { House } from "lucide-react";
 import { CircleArrowOutUpRightIcon } from "lucide-react";
 import { Send } from "lucide-react";
 import { Bookmark } from "lucide-react";
+import { User } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ const Navbar = () => {
           <Link to={"/bookmarks"}><Bookmark size={33}/></Link>
           <Link to={"/explore"}><CircleArrowOutUpRightIcon size={33}/></Link>
           <Link to={"/messages"}><Send size={33}/></Link>
+          <Link to={"profile"}><User size={33}/></Link>
         </ul>
       </nav>
     </div>
