@@ -1,5 +1,8 @@
 import useForm from "../../hooks/useForm";
 import validateRegisterForm from "../../utils/validateRegisterForm";
+import { useContext } from "react";
+import { UserContext } from "../../context/ProfileContext";
+import { useNavigate } from "react-router-dom";
 import { User } from "lucide-react";
 
 const initialValues = {
@@ -11,7 +14,15 @@ const initialValues = {
 }
 
 const RegisterForm = () => {
-  const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateRegisterForm);
+  const { loginUser } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  const handleRegister = (data) => {
+    loginUser(data);
+    navigate("/home");
+  }
+
+  const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateRegisterForm, handleRegister);
 
   return (
     <div className="form-layout">

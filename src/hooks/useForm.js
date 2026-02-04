@@ -1,11 +1,8 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
-const useForm = (initialValues, validate) => {
+const useForm = (initialValues, validate, onSubmit) => {
   const [ values, setValues ] = useState(initialValues);
   const [ errors, setErrors ] = useState({});
-
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,8 +17,8 @@ const useForm = (initialValues, validate) => {
     setErrors(validateErrors);
 
     if(Object.keys(validateErrors).length === 0) {
+      onSubmit(values)
       setValues(initialValues);
-      navigate("/home")
     }
   };
 

@@ -1,5 +1,8 @@
 import useForm from "../../hooks/useForm";
 import validateLoginForm from "../../utils/validateLoginForm";
+import { useContext } from "react";
+import { UserContext } from "../../context/ProfileContext";
+import { useNavigate } from "react-router-dom";
 import { User } from "lucide-react";
 
 const initialValues = {
@@ -9,7 +12,15 @@ const initialValues = {
 }
 
 const LoginForm = () => {
-  const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateLoginForm)
+  const { loginUser } = useContext(UserContext); 
+  const navigate = useNavigate();
+
+  const handleLogin = (data) => {
+    loginUser(data);
+    navigate("/home");
+  };
+
+  const { errors, values, handleChange, handleSubmit } = useForm(initialValues, validateLoginForm, handleLogin);
 
   return (
     <div className="form-layout">
