@@ -9,8 +9,8 @@ const messagesData = [
     id: 1,
     avatar: avatar1,
     username: "max_ovcharenko",
-    lastMessage: "Hey how are you",
-    time: "1h ago",
+    lastMessage: "Sure, send it to me.",
+    time: "1h",
     isOnline: true,
   },
 
@@ -18,8 +18,8 @@ const messagesData = [
     id: 2,
     avatar: avatar2,
     username: "ali_morshedlou",
-    lastMessage: "Hey how are you",
-    time: "24 minutes ago",
+    lastMessage: "Perfect, let me know if you need anything.",
+    time: "24m",
     isOnline: false,
   },
 
@@ -27,8 +27,8 @@ const messagesData = [
     id: 3,
     avatar: avatar3,
     username: "rena_savalh",
-    lastMessage: "Hey how are you",
-    time: "24 minutes ago",
+    lastMessage: "See you later.",
+    time: "5m",
     isOnline: false,
   },
 
@@ -36,8 +36,8 @@ const messagesData = [
     id: 4,
     avatar: avatar4,
     username: "taylor_",
-    lastMessage: "Hey how are you",
-    time: "24 minutes ago",
+    lastMessage: "Okay, waiting for feedback.",
+    time: "just now",
     isOnline: false,
   },
 
@@ -45,8 +45,8 @@ const messagesData = [
     id: 5,
     avatar: avatar5,
     username: "ayo_",
-    lastMessage: "Hey how are you",
-    time: "24 minutes ago",
+    lastMessage: "No problem 👍",
+    time: "2h",
     isOnline: false,
   }
 ]
