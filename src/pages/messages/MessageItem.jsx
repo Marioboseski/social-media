@@ -10,7 +10,7 @@ const MessageItem = ({ message }) => {
 
 
   return (
-    <div onClick={handleOpenChat} className="flex items-end gap-3 border-b-2 w-full max-w-[500px]">
+    <div onClick={handleOpenChat} className="flex items-end gap-3 border-b-2 w-full max-w-[500px] min-h-16 hover:bg-gray-300 cursor-pointer">
       <img src={message.avatar} alt="message-avatar-img" className="w-14 h-14 rounded-full object-cover" />
       <div className="flex flex-col ">
         <p className="font-semibold">{message.username}</p>
