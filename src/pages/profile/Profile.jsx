@@ -12,7 +12,7 @@ const Profile = () => {
 
   const handleLogout = () => {
     logoutUser();
-    navigate("/", { replace: true });
+    navigate("/", { replace });
   }
   return (
     <div className="flex flex-col gap-3 p-3">
