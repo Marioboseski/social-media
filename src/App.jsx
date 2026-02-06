@@ -6,6 +6,7 @@ import Messages from "./pages/messages/Messages";
 import Chat from "./pages/chat/Chat";
 import Profile from "./pages/profile/Profile";
 import Layout from "./layouts/Layout";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -14,13 +15,17 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/home" element={<Home />} />
-          <Route path="/bookmarks" element={<Bookmarks />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/profile" element={<Profile />} />
+          
+          <Route element={<ProtectedRoute />}>
+            <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/messages/:id" element={<Chat />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+
         </Route>
         <Route path="/" element={<Auth />} />
-        <Route path="/messages/:id" element={<Chat />} />
       </Routes>
     </div>
   );
