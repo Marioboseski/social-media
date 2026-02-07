@@ -26,52 +26,62 @@ const RegisterForm = () => {
 
   return (
     <div className="form-layout">
-      <User className="user-icon-form"/>
+      <User className="user-icon-form" />
       <form onSubmit={handleSubmit} className="auth-form">
-        <input type="text"
-        name="name"
-        value={values.name}
-        onChange={handleChange}
-        placeholder="Name"
-        className="form-inputs" />
 
-        {errors.name && <p>{errors.name}</p>}
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            placeholder="Name"
+            className="form-inputs" />
+          {errors.name && <p className="input-errors">{errors.name}</p>}
+        </div>
 
-        <input type="text"
-        name="lastName"
-        value={values.lastName}
-        onChange={handleChange}
-        placeholder="Lastname"
-        className="form-inputs" />
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="lastName"
+            value={values.lastName}
+            onChange={handleChange}
+            placeholder="Lastname"
+            className="form-inputs" />
 
-        {errors.lastName && <p>{errors.lastName}</p>}
+          {errors.lastName && <p className="input-errors">{errors.lastName}</p>}
+        </div>
 
-        <input type="email"
-        name="email"
-        value={values.email}
-        onChange={handleChange}
-        placeholder="Email"
-        className="form-inputs" />
+        <div className="form-inputs-divs">
+          <input type="email"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            placeholder="Email"
+            className="form-inputs" />
 
-        {errors.email && <p>{errors.email}</p>}
+          {errors.email && <p className="input-errors">{errors.email}</p>}
+        </div>
 
-        <input type="password"
-        name="password"
-        value={values.password}
-        onChange={handleChange}
-        placeholder="*******"
-        className="form-inputs" />
+        <div className="form-inputs-divs">
+          <input type="password"
+            name="password"
+            value={values.password}
+            onChange={handleChange}
+            placeholder="*******"
+            className="form-inputs" />
 
-        {errors.password && <p>{errors.password}</p>}
+          {errors.password && <p className="input-errors">{errors.password}</p>}
+        </div>
 
-        <input type="text"
-        name="location"
-        value={values.location}
-        onChange={handleChange}
-        placeholder="Location"
-        className="form-inputs" />
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="location"
+            value={values.location}
+            onChange={handleChange}
+            placeholder="Location"
+            className="form-inputs" />
 
-        {errors.location && <p>{errors.location}</p>}
+          {errors.location && <p className="input-errors">{errors.location}</p>}
+        </div>
 
         <button type="submit" className="form-buttons">Send</button>
       </form>

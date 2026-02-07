@@ -12,7 +12,7 @@ const initialValues = {
 }
 
 const LoginForm = () => {
-  const { loginUser } = useContext(UserContext); 
+  const { loginUser } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleLogin = (data) => {
@@ -24,34 +24,41 @@ const LoginForm = () => {
 
   return (
     <div className="form-layout">
-      <User className="user-icon-form"/>
+      <User className="user-icon-form" />
       <form onSubmit={handleSubmit} className="auth-form">
-        <input type="text"
-          name="name"
-          value={values.name}
-          onChange={handleChange}
-          placeholder="Name"
-          className="form-inputs" />
 
-        {errors.name && <p>{errors.name}</p>}
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            placeholder="Name"
+            className="form-inputs" />
 
-        <input type="text"
-          name="email"
-          value={values.email}
-          onChange={handleChange}
-          placeholder="Email" 
-          className="form-inputs" />
+          {errors.name && <p className="input-errors">{errors.name}</p>}
+        </div>
 
-        {errors.email && <p>{errors.email}</p>}
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            placeholder="Email"
+            className="form-inputs" />
 
-        <input type="text"
-          name="password"
-          value={values.password}
-          onChange={handleChange}
-          placeholder="*******"
-          className="form-inputs" />
+          {errors.email && <p className="input-errors">{errors.email}</p>}
+        </div>
 
-        {errors.password && <p>{errors.password}</p>}
+        <div className="form-inputs-divs">
+          <input type="text"
+            name="password"
+            value={values.password}
+            onChange={handleChange}
+            placeholder="*******"
+            className="form-inputs" />
+
+          {errors.password && <p className="input-errors">{errors.password}</p>}
+        </div>
         <button type="submit" className="form-buttons">Log in</button>
       </form>
     </div>
