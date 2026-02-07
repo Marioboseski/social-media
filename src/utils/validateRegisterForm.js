@@ -5,7 +5,7 @@ const validateRegisterForm = ( values ) => {
     errors.name = "Enter your name";
   }
   if (!values.lastName.trim()) {
-    errors.lastName = "Enter your username";
+    errors.lastName = "Enter your lastname";
   }
   if (!values.email) {
     errors.email = "Email required";
