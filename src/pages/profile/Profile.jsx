@@ -15,7 +15,7 @@ const Profile = () => {
     navigate("/", { replace });
   }
   return (
-    <div className="flex flex-col gap-3 p-3">
+    <div className="flex flex-col justify-center gap-3 p-3 md:items-center">
 
       <div className="flex justify-center items-center gap-3">
         <User className="w-full max-w-28 min-h-28 border-2 border-gray-500 rounded-full p-2 bg-gray-300 " />
