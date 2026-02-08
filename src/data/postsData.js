@@ -3,11 +3,15 @@ import post2 from "../assets/posts/post2.jpg";
 import post3 from "../assets/posts/post3.jpg";
 import post4 from "../assets/posts/post4.jpg";
 import post5 from "../assets/posts/post5.jpg";
+import post6 from "../assets/posts/post7.jpg";
+import post7 from "../assets/posts/post6.jpg";
 import avatar1 from "../assets/posts/avatar1.jpg";
 import avatar2 from "../assets/posts/avatar2.jpg";
 import avatar3 from "../assets/posts/avatar3.jpg";
 import avatar4 from "../assets/posts/avatar4.jpg";
 import avatar5 from "../assets/posts/avatar5.jpg";
+import avatar6 from "../assets/posts/avatar6.jpg";
+import avatar7 from "../assets/posts/avatar7.jpg";
 import { Heart } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 import { BadgeCheck } from "lucide-react";
@@ -59,6 +63,26 @@ const postsData = [
     username: "taylor_",
     post: post5,
     caption: "Parked and ready to ride",
+    icons: [ Heart, MessageCircle ],
+    VerifIcon: BadgeCheck,
+  },
+
+  {
+    id: 6,
+    avatar: avatar6,
+    username: "sasha_matveeva",
+    post: post6,
+    caption: "Built for everyday moves.",
+    icons: [ Heart, MessageCircle ],
+    VerifIcon: BadgeCheck,
+  },
+
+  {
+    id: 7,
+    avatar: avatar7,
+    username: "dwayne_joe",
+    post: post7,
+    caption: "Architecture in motion.",
     icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
