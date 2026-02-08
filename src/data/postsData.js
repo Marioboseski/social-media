@@ -12,8 +12,6 @@ import avatar4 from "../assets/posts/avatar4.jpg";
 import avatar5 from "../assets/posts/avatar5.jpg";
 import avatar6 from "../assets/posts/avatar6.jpg";
 import avatar7 from "../assets/posts/avatar7.jpg";
-import { Heart } from "lucide-react";
-import { MessageCircle } from "lucide-react";
 import { BadgeCheck } from "lucide-react";
 
 const postsData = [
@@ -23,7 +21,6 @@ const postsData = [
     username: "max_ovcharenko",
     post: post1,
     caption: "Winter forest at sunset",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -33,7 +30,6 @@ const postsData = [
     username: "ayo_",
     post: post2,
     caption: "Tall trees and calm surroundings",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -43,7 +39,6 @@ const postsData = [
     username: "ali_morshedlou",
     post: post3,
     caption: "A classic view of the city",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -53,7 +48,6 @@ const postsData = [
     username: "rena_savalh",
     post: post4,
     caption: "City streets in motion",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -63,7 +57,6 @@ const postsData = [
     username: "taylor_",
     post: post5,
     caption: "Parked and ready to ride",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -73,7 +66,6 @@ const postsData = [
     username: "sasha_matveeva",
     post: post6,
     caption: "Built for everyday moves.",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 
@@ -83,7 +75,6 @@ const postsData = [
     username: "dwayne_joe",
     post: post7,
     caption: "Architecture in motion.",
-    icons: [ Heart, MessageCircle ],
     VerifIcon: BadgeCheck,
   },
 ];
