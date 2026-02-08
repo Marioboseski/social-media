@@ -8,8 +8,8 @@ const Stories = () => {
 
 
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="flex gap-3 overflow-x-auto py-2 scrollbar-hide">
+    <div className="w-full overflow-x-auto overscroll-x-contain overflow-y-hidden scrollbar-hide">
+      <div className="flex gap-3 py-2">
         {storiesData.map((story) => (
           <Story key={story.id} story={story} onOpen={setActiveStory} />
         ))}
@@ -17,8 +17,10 @@ const Stories = () => {
 
       {activeStory && (
         <div className=" flex flex-col justify-center items-center z-50 fixed bg-black/80 inset-0 p-3 min-h-dvh">
-          <button onClick={() => setActiveStory(null)} className="text-white"><X size={50}/></button>
-          <img src={activeStory.storyImg} alt="story" className=" w-full max-w-[400px] border-2 border-gray-300 rounded-lg"/>
+          <div>
+            <button onClick={() => setActiveStory(null)} className="text-white"><X size={50} /></button>
+            <img src={activeStory.storyImg} alt="story" className=" w-full max-w-[400px] border-2 border-gray-300 rounded-lg" />
+          </div>
         </div>
       )}
     </div>
