@@ -8,7 +8,7 @@ const Stories = () => {
 
 
   return (
-    <div className="w-full overflow-x-auto overscroll-x-contain overflow-y-hidden scrollbar-hide">
+    <div className="w-full overflow-x-auto overscroll-x-contain overflow-y-hidden scrollbar-hide md:flex md:justify-center md:items-center">
       <div className="flex gap-3 py-2">
         {storiesData.map((story) => (
           <Story key={story.id} story={story} onOpen={setActiveStory} />
