@@ -16,6 +16,8 @@ const validateRegisterForm = ( values ) => {
     errors.password = "Password required";
   } else if (values.password.length < 6) {
     errors.password = "Password must be atleast six characters";
+  } else if (!/[A-Z]/.test(values.password) || (!/[!@#$%^&*(),.?":{}|<>]/.test(values.password))) {
+    errors.password = "Pasword must contain atleast one upper case and one special character"
   }
   if(!values.location.trim()) {
     errors.location = "Location required";
