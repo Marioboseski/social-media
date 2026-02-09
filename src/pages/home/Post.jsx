@@ -23,7 +23,7 @@ const Post = ({ post }) => {
       <img src={post.post} alt="post" className="w-full max-w-[450px]" />
 
       <div className="flex gap-3 items-center">
-        <Heart onClick={toggleLike} className={`transition ${liked ? "fill-red-500 text-red-500" : "none"}`} />
+        <Heart onClick={toggleLike} className={`transition ${liked ? "fill-red-500 text-red-500" : "none"} cursor-pointer`} />
 
         <MessageCircle />
 
