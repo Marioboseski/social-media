@@ -43,8 +43,6 @@ The project focuses on clean architecture, reusable components, clean UI/UX, res
 
 https://marioboseski.github.io/social-media/
 
-https://marioboseski.github.io/social-media/
-
 
 # Author
 
